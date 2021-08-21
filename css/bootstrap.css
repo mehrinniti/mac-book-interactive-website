@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+a{
+    text-decoration: none;
+}
+
+.price-btn {
+    padding: 5px 10px;
+    border: 1.5px solid #888;
+    border-radius: 5px;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .4s;
+}
+
+.price-btn:hover{
+    box-shadow: 2.5px 2.5px 15px rgba(0,0,0,0.5);
+}
+
+.price-btn:focus{
+    background: rgb(58, 54, 54);
+    color: #fff;
+}
+
+.config-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+.price-text {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.bold-border{
+    border-bottom: 2px solid #222;
+}
+p{
+    margin-bottom: 0;
+}
+
+@media (max-width:550px){
+    .price-btn{
+        margin-bottom: 8px;
+    }
+}
