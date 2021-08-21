@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mac-book-pro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">
+                    <img class="w-75   " src="images/mac.png" alt="">
+                </div>
+                <div class="col">
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>M1 features our latest Neural Engine. Its 16‑core design is capable of executing a massive 11
+                        trillion operations per second. In fact, with a powerful 8‑core GPU, machine learning
+                        accelerators, and the Neural Engine, the entire M1 chip is designed to excel at machine
+                        learning.</p>
+
+                    <div class="memory">
+                        <p><strong>Memory</strong></p>
+                        <button id="8GB-memoryBtn" type="button" class="btn btn-outline-dark">8GB unified
+                            memory</button>
+                        <button id="16GB-memoryBtn" type="button" class="btn btn-outline-dark">16GB unified
+                            memory</button>
+                    </div>
+
+                    <div class="storage mt-5">
+                        <p><strong>Storage</strong></p>
+                        <button id="256gb-ssdBtn" type="button" class="btn btn-outline-dark">256GB SSD storage</button>
+                        <button id="512gb-ssdBtn" type="button" class="btn btn-outline-dark">512GB SSD storage</button>
+                        <button id="1tb-ssdBtn" type="button" class="btn btn-outline-dark">1TB SSD storage</button>
+                    </div>
+
+                    <div class="delivery-option mt-5">
+                        <p><strong>Choose your delivery option</strong></p>
+                        <button id="free-deliveryBtn" type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE
+                            Prime Delivery</button>
+                        <button id="charge-deliveryBtn" type="button" class="btn btn-outline-dark">Friday, Aug 21
+                            Delivery charge $20</button>
+                    </div>
+
+
+                    <table class="table mt-5">
+
+                        <tbody>
+                            <tr>
+                                <th>Best Price</th>
+                                <th>$1299</th>
+                            </tr>
+                            <tr>
+                                <th>Extra Memory Cost</th>
+                                <th>$<span id="memory-cost">0</span></th>
+                            </tr>
+                            <tr>
+                                <th>Extra Storage Cost</th>
+                                <th>$<span id="storage-cost">0</span></th>
+                            </tr>
+                            <tr>
+                                <th>Delivery charge</th>
+                                <th>$<span id="delivery-cost">0</span></th>
+                            </tr>
+                        <tfoot>
+                            <tr>
+                                <th scope="col">Total Price</th>
+                                <th>$1299</th>
+                            </tr>
+                        </tfoot>
+
+                        </tbody>
+                    </table>
+
+                    <div class="promo-code my-4">
+                        <p><strong>Add promo code</strong></p>
+                        <input type="text" name="" id="input-code">
+                        <button type="button" class="btn btn-danger p-1">Apply</button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <hr>
+            <h3 class="text-center">Total: $1299</h3>
+
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mac-book.js"></script>
+</body>
+
+</html>
