@@ -1,16 +1,18 @@
+
+//  get input
 function valueFind(idpara, value) {
     const mainValue = document.getElementById(idpara).innerText = value;
     return mainValue;
 }
 
-
+//  find total cost
 function totalFind(cost) {
     const averageCost = document.getElementById('total-price');
     averageCost.innerText = cost;
     document.getElementById('coupon-total').innerText = cost;
 }
 
-
+//  Total calculation
 
 function memoryTotalFind(valueOfMain, valueOfId1, valueOfId2) {
     const storage256gb = document.getElementById(valueOfId1).innerText;
@@ -22,57 +24,49 @@ function memoryTotalFind(valueOfMain, valueOfId1, valueOfId2) {
     document.getElementById('error').innerText = '';
 }
 
-
-
+//  8GB unified memory
 document.getElementById('memory-8gb-price').addEventListener('click', function () {
     const memory8gbValue = valueFind('memory-cost', 0);
     memoryTotalFind(memory8gbValue, 'storage-cost', 'delivery-cost');
 });
 
-
-
+//  16GB unified memory
 document.getElementById('memory-16gb-price').addEventListener('click', function () {
     const memory16gb = valueFind('memory-cost', 180);
     memoryTotalFind(memory16gb, 'storage-cost', 'delivery-cost');
 });
 
-
-
+//  256GB SSD storage
 document.getElementById('ssd-256gb-price').addEventListener('click', function () {
     const memory256gb = valueFind('storage-cost', 0);
     memoryTotalFind(memory256gb, 'memory-cost', 'delivery-cost');
 });
 
-
-
+//  512GB SSD storage
 document.getElementById('ssd-512gb-price').addEventListener('click', function () {
     const memory512gb = valueFind('storage-cost', 100);
     memoryTotalFind(memory512gb, 'memory-cost', 'delivery-cost');
 });
 
-
-
+//  1TB SSD storage
 document.getElementById('ssd-1tb-price').addEventListener('click', function () {
     const memory1tb = valueFind('storage-cost', 180);
     memoryTotalFind(memory1tb, 'memory-cost', 'delivery-cost');
 });
 
-
-
+//  FREE Delivery
 document.getElementById('delivery-free').addEventListener('click', function () {
     const deliveryFree = valueFind('delivery-cost', 0);
     memoryTotalFind(deliveryFree, 'memory-cost', 'storage-cost');
 });
 
-
-
+//  Delivery charge
 document.getElementById('delivery-prime').addEventListener('click', function () {
     const deliveryPrime = valueFind('delivery-cost', 20);
     memoryTotalFind(deliveryPrime, 'memory-cost', 'storage-cost');
 });
 
-
-
+//  Apply coupon and total price
 document.getElementById('promo-btn').addEventListener('click', function () {
     const promoValueField = document.getElementById('promo-value');
     const promoValue = promoValueField.value;
